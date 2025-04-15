@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harshitha Bootstrap Homework</title>
+    <!-- css style sheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/homework.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Harshitha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./carousel.html">Carousel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Grid Challenges
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../gridchallenges/Challenge1.html">Grid Challenge 1</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../gridchallenges/Challenge2.html">Grid Challenge 2</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../gridchallenges/Challenge3.html">Grid Challenge 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-lg">
+        <div class="row pt-3">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1>
+                    Title for Column 1
+                </h1>
+                <h2>
+                    Sub Title for Column 1
+                </h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+
+            <div class="col-1"></div>
+            <div><!-- close row 1 -->
+
+
+                <div class="row ">
+                    <div class="col-lg-4 col-md-12 py-2 ">
+                        <div class="card">
+                            <img src="../images/placeholder1.jpg" class="card-img-top" alt="china_wall">
+                            <div class="card-body">
+                                <h5 class="card-title">Great Wall of China</h5>
+                                <p class="card-text"> Title: Wonders of Ancient Architecture
+                                    <br>
+                                    Text: Discover the legacy of the Great Wall of China, a marvel of ancient
+                                    engineering, winding through golden autumn landscapes. Built to protect, now
+                                    preserved to inspire.
+                                </p>
+
+                                <div class="border-top border-2 pb-5"></div>
+
+                                <a href="#"
+                                    class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2"  data-bs-toggle="modal" data-bs-target="#chinaModal">More information</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="chinaModal" tabindex="-1" aria-labelledby="chinaModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="chinaModalLabel">Great Wall of China</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Stretching over 13,000 miles, the Great Wall is a symbol of resilience and strategy. Winding through mountains and forests, it's a lasting marvel of ancient China.</p>
+                                <ul>
+                                  <li><strong>Built:</strong> 7th century BC onwards</li>
+                                  <li><strong>Length:</strong> Over 21,000 km</li>
+                                  <li><strong>Sections:</strong> Badaling, Mutianyu, Jinshanling</li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                                <img src="../images/placeholder1-1.jpg" alt="Great Wall of China" class="img-fluid rounded">
+                              </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- close modal -->
+
+
+                    <div class="col-lg-4 col-md-12 py-2">
+                        <div class="card">
+                            <img src="../images/placeholder2.jpg" class="card-img-top" alt="floaral_building">
+                            <div class="card-body">
+                                <h5 class="card-title">Gaudí Architecture, Barcelona</h5>
+                                <p class="card-text">Title: Whimsy in Stone: Gaudí's Vision
+                                    Text: Step into a dreamscape of color and curves. Explore Antoni Gaudí’s
+                                    architectural masterpieces in Barcelona, where art and structure blend effortlessly.
+                                </p>
+                                <div class="border-top border-2 pb-5"></div>
+                                <a href="#"
+                                    class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2"  data-bs-toggle="modal" data-bs-target="#spainModal">More information</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="spainModal" tabindex="-1" aria-labelledby="spainModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="spainModalLabel">Casa Batllo, Barcelona</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                      
+                            <div class="modal-body">
+                              <p>A masterpiece by Antoni Gaudí, Casa Batllo is famous for its surreal architecture, colorful tiles, and organic curves that mimic marine life.</p>
+                              <ul>
+                                <li><strong>Architect:</strong> Antoni Gaudí</li>
+                                <li><strong>Completed:</strong> 1906</li>
+                                <li><strong>Style:</strong> Catalan Modernism</li>
+                              </ul>
+                            </div>
+                      
+                            <div class="modal-footer">
+                              <img src="../images/placeholder2-1.jpg" alt="Casa Batllo in Barcelona" class="img-fluid rounded">
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+
+
+
+                    <div class="col-lg-4 col-md-12 py-2">
+                        <div class="card">
+                            <img src="../images/placeholder3.jpg" class="card-img-top" alt="hollandpark_mews">
+                            <div class="card-body">
+                                <h5 class="card-title">Holland Park Mews, London</h5>
+                                <p class="card-text">Title: Hidden Corners of London
+                                    Text: Walk through Holland Park Mews, a peaceful, cobblestone escape tucked inside
+                                    the urban buzz. A timeless portal into London’s historical charm.</p>
+                                <div class="border-top border-2 pb-5"></div>
+                                <a href="#"
+                                    class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2"  data-bs-toggle="modal" data-bs-target="#ukModal">More information</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="ukModal" tabindex="-1" aria-labelledby="ukModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="ukModalLabel">Holland Park Mews, London</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                      
+                            <div class="modal-body">
+                              <p>Nestled in Kensington, this charming cobbled mews street offers a glimpse into London's historic architecture and serene residential beauty.</p>
+                              <ul>
+                                <li><strong>Location:</strong> Kensington, London</li>
+                                <li><strong>Known for:</strong> Picturesque arches and quiet streets</li>
+                                <li><strong>Style:</strong> Victorian mews housing</li>
+                              </ul>
+                            </div>
+                      
+                            <div class="modal-footer">
+                              <img src="../images/placeholder3-1.jpg" alt="Holland Park Mews, London" class="img-fluid rounded">
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+
+                </div> <!-- close row with cards  -->
+            </div> <!-- close container lg -->
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+                crossorigin="anonymous"></script>
+</body>
+<footer class="footer-cy py-3 mx-5 border-top border-2 ">
+
+    <p>
+
+        copyright Harshitha Gandi | <strong> Last update was April 2024 </strong>
+    </p>
+
+</footer>
+
+</html>

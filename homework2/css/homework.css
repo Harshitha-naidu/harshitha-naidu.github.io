@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+.pink-col{
+    background-color: rgb(230, 139, 202);
+}
+
+.cyan-col{
+    background-color: rgb(77, 203, 212);
+}
+
+.yellow-col{
+    background-color: rgb(247, 239, 15);
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .bg-body-tertiary{ 
+    background-color: rgb(203, 189, 144)!important;
+  }
+
+  .nav-link{
+    color: rgb(115, 80, 14)!important;
+  }
+
+  .nav-link:hover{
+    color: #ffff !important;
+  }
+
+  .navbar-brand {
+    color: #84670f !important;
+  }
+
+  .active{
+    color: #fdfdfd!important;
+  }
+
+  .navbar-toggle{
+    filter: invert(100%);
+  }
+
+  h1{
+    font-size: 1.802em;
+    font-weight: 700;
+  }
+
+  h2{
+    font-size: 1.602em;
+    font-weight: 700;
+  }
+
+  .btn-primary{
+    background-color: #84670f;
+    border: #84670f;
+  }
+
+  .btn-primary:hover{
+    background-color: #4d3c3c;
+  }
