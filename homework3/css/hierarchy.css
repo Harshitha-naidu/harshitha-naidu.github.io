@@ -1,0 +1,159 @@
+
+.hierarchy1-h1 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.986em;
+}
+
+.hierarchy1-h2 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.488em;
+}
+
+.hierarchy1-h3 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.074em;
+}
+
+.hierarchy1-h4 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.728em;
+}
+
+.hierarchy1-body {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.hierarchy1-emphasis {
+  font-family: "Source Sans 3", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hierarchy1-link {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.hierarchy1-link:hover {
+  color: #0056b3;
+}
+
+.hierarchy2-h1 {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.052em;
+}
+
+.hierarchy2-h2 {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.441em;
+}
+
+.hierarchy2-h3 {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.953em;
+}
+
+.hierarchy2-h4 {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.563em;
+}
+
+.hierarchy2-body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.hierarchy2-emphasis {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hierarchy2-link {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.hierarchy2-link:hover {
+  color: #0056b3;
+}
+
+.hierarchy3-h1 {
+  font-family: "Nova Round", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.815em;
+}
+
+.hierarchy3-h2 {
+  font-family: "Nova Round", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.052em;
+}
+
+.hierarchy3-h3 {
+  font-family: "Nova Round", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.441em;
+}
+
+.hierarchy3-h4 {
+  font-family: "Nova Round", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.953em;
+}
+
+.hierarchy3-body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.hierarchy3-emphasis {
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hierarchy3-link {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.hierarchy3-link:hover {
+  color: #0056b3;
+}
