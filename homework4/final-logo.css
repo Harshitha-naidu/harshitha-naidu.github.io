@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding-bottom: 100px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  
+  .card img {
+    width: 180px !important;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  
+  .card {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .card h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .favicon-img {
+
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  
