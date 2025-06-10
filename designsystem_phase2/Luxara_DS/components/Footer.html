@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxara: Mini-Design System: Components</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/favi_icon.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Google Fonts for design system -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/design-system.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark border-bottom-0 sticky-top d-md-none"
+    style="background-color: var(--hash-primary-midnight);">
+    <!-- Navbar toggle button (hamburger icon) -->
+
+
+    <button class="navbar-toggler d-block d-md-none navbar-hieght" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#sidebar" aria-controls="sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </nav>
+
+  </nav>
+  <!-- This topbar toggle to the off canvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar"
+    style="background-color: var(--hash-primary-midnight);" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+
+      <div class="nav-logo-container w-100">
+        <a href="../index.html" class="d-flex justify-content-center align-items-center text-decoration-none">
+          <img src="../assets/logo.png" alt="Luxara Logo" class="nav-logo">
+        </a>
+      </div>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+      </button>
+    </div>
+    <div class="offcanvas-body ">
+      <ul class="nav flex-column">
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+              data-bs-target="#foundations-collapse" aria-expanded="false" style="color: var(--hash-text-white);">
+              Foundations
+            </button>
+            <div class="collapse" id="foundations-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="../foundation/type.html" class="text-decoration-none rounded"
+                    style="color: var(--hash-text-light-gray);">Typography</a></li>
+                <li><a href="../foundation/color.html" class="text-decoration-none rounded"
+                    style="color: var(--hash-text-light-gray);">Color</a></li>
+                <li><a href="../foundation/logo.html" class="text-decoration-none rounded"
+                    style="color: var(--hash-text-light-gray);">Logo</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+              data-bs-target="#components-collapse" aria-expanded="true" style="color: var(--hash-text-white);">
+              Components
+            </button>
+            <div class="collapse show" id="components-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="Buttons.html" class=" text-decoration-none rounded"
+                    style="color: var(--hash-text-light-gray);">Buttons</a></li>
+                <li><a href="Cards.html" class="text-decoration-none rounded"
+                    style="color: var(--hash-text-light-gray);">Cards</a></li>
+                <li><a href="Navbar.html" class="text-decoration-none rounded"
+                    style="color: var(--hash-text-light-gray);">Navbar</a></li>
+                <li><a href="Footer.html" class="activeLink text-decoration-none rounded"
+                    style="color: var(--hash-text-light-gray);">Footer</a></li>
+
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+              data-bs-target="#patterns-collapse" aria-expanded="false" style="color: var(--hash-text-white);">
+              Page Patterns
+            </button>
+            <div class="collapse" id="patterns-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="../patterns/page1.html" class="text-decoration-none rounded"
+                    style="color: var(--hash-text-light-gray);">Homepage</a></li>
+                <li><a href="../patterns/page2.html" class="text-decoration-none rounded"
+                    style="color: var(--hash-text-light-gray);">Case Study</a></li>
+              </ul>
+        </ul>
+    </div>
+  </div>
+  <!-- This is the sidebar menu -->
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-none d-md-block sidebar shadow">
+        <div class="position-sticky vh-100" style="background-color: var(--hash-primary-midnight);">
+          <div class="pt-3">
+
+            <div class="nav-logo-container">
+              <a href="../index.html" class="d-flex justify-content-center align-items-center text-decoration-none">
+                <img src="../assets/logo.png" alt="Luxara Logo" class="nav-logo">
+              </a>
+            </div>
+            <ul class="nav flex-column">
+              <ul class="list-unstyled ps-0">
+
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#foundations-collapse" aria-expanded="false" style="color: var(--hash-text-white);">
+                    Foundations
+                  </button>
+                  <div class="collapse" id="foundations-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="../foundation/type.html" class="text-decoration-none rounded"
+                          style="color: var(--hash-text-light-gray);">Typography</a></li>
+                      <li><a href="../foundation/color.html" class="text-decoration-none rounded"
+                          style="color: var(--hash-text-light-gray);">Color</a></li>
+                      <li><a href="../foundation/logo.html" class="text-decoration-none rounded"
+                          style="color: var(--hash-text-light-gray);">Logo</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#components-collapse" aria-expanded="true" style="color: var(--hash-text-white);">
+                    Components
+                  </button>
+                  <div class="collapse show" id="components-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="Buttons.html" class=" text-decoration-none rounded"
+                          style="color: var(--hash-text-light-gray);">Buttons</a></li>
+                      <li><a href="Cards.html" class="text-decoration-none rounded"
+                          style="color: var(--hash-text-light-gray);">Cards</a></li>
+                      <li><a href="Navbar.html" class="text-decoration-none rounded"
+                          style="color: var(--hash-text-light-gray);">Navbar</a></li>
+                      <li><a href="Footer.html" class="activeLink text-decoration-none rounded"
+                          style="color: var(--hash-text-light-gray);">Footer</a></li>
+
+                    </ul>
+                  </div>
+                </li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#patterns-collapse" aria-expanded="false" style="color: var(--hash-text-white);">
+                    Page Patterns
+                  </button>
+                  <div class="collapse" id="patterns-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li><a href="../patterns/page1.html" class="text-decoration-none rounded"
+                          style="color: var(--hash-text-light-gray);">Homepage</a></li>
+                      <li><a href="../patterns/page2.html" class="text-decoration-none rounded"
+                          style="color: var(--hash-text-light-gray);">Case Study</a></li>
+                    </ul>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <main class="col-12 col-md-10 col-lg-10 px-md-4 ">
+
+        <!-- Page Content  -->
+        <div class="container-fluid overflow-auto">
+          <div class="row p-5">
+            <div id="content">
+              <h2>Footer Component</h2>
+              <p>The Footer component provides essential information and navigation links at the bottom of a webpage. It
+                is designed to be fully responsive, adapting its layout to different screen sizes while maintaining
+                readability and usability.</p>
+              <p>Our Footer includes copyright information, a brief tagline, and social media links.</p>
+
+              <h3>Footer Examples</h3>
+
+              <h4>Responsive Footer Example</h4>
+              <p>This example demonstrates how the Footer adapts to different screen sizes - desktop, tablet, and mobile - using Bootstrap's responsive classes.</p>
+              <div class="footer-example mb-4 p-3" style="background-color: var(--hash-primary-midnight); color: var(--hash-text-white);">
+                <div class="container-fluid">
+                  <div class="row align-items-center">
+                    <!-- Desktop: Full width, Tablet: Half width, Mobile: Full width -->
+                    <div class="col-12 col-md-6 col-lg-4 text-center text-md-start mb-3 mb-md-0">
+                      <p class="mb-0">&copy; 2025 Harshitha | All rights reserved</p>
+                    </div>
+                    <!-- Desktop: Full width, Tablet: Hidden, Mobile: Hidden -->
+                    <div class="col-lg-4 text-center d-none d-lg-block">
+                      <p class="mb-0">Crafting digital experiences with passion.</p>
+                    </div>
+                    <!-- Desktop: Full width, Tablet: Half width, Mobile: Full width -->
+                    <div class="col-12 col-md-6 col-lg-4 text-center text-md-end">
+                      <!-- Desktop & Tablet: Text links -->
+                      <ul class="list-inline mb-0 d-none d-md-block">
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none" style="color: var(--hash-text-white);">Dribble</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none" style="color: var(--hash-text-white);">Behance</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none" style="color: var(--hash-text-white);">Instagram</a></li>
+                      </ul>
+                      <!-- Mobile: Icon links -->
+                      <ul class="list-inline mb-0 d-md-none">
+                        <li class="list-inline-item"><a href="#"><img src="../assets/dribble.png" alt="Dribble" width="24" height="24"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="../assets/behance.png" alt="Behance" width="24" height="24"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="../assets/instagram.png" alt="Instagram" width="24" height="24"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3>Code Snippet</h3>
+              <p>Below is the HTML structure for a responsive Footer component. This example uses Bootstrap's grid
+                system to adapt content for different screen sizes.</p>
+              <div class="code-background p-3 mb-4">
+                <pre><code class="language-html">
+&lt;footer class="bg-dark text-white py-3"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row align-items-center"&gt;
+      &lt;div class="col-md-4 text-center text-md-start"&gt;
+        &lt;p class="mb-0"&gt;&copy; 2025 Your Brand | All rights reserved&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="col-md-4 text-center d-none d-md-block"&gt;
+        &lt;p class="mb-0"&gt;Your tagline here.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="col-md-4 text-center text-md-end"&gt;
+        &lt;ul class="list-inline mb-0"&gt;
+          &lt;li class="list-inline-item"&gt;&lt;a href="#" class="text-white"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="list-inline-item"&gt;&lt;a href="#" class="text-white"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="list-inline-item"&gt;&lt;a href="#" class="text-white"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+              </code></pre>
+              </div>
+
+              <h3>Usage Considerations</h3>
+              <ul>
+                <li>Content Hierarchy:</strong> Prioritize important information such as copyright, and then add
+                  secondary content like taglines or social links.</li>
+                <li>Responsive Behavior:</strong> Utilize Bootstrap's responsive utility classes to ensure content
+                  rearranges gracefully on smaller screens.</li>
+                <li>Consistency:</strong> Maintain consistent branding and visual style with the rest of the website.
+                </li>
+              </ul>
+
+              <h3>Accessibility Considerations</h3>
+              <ul>
+                <li>Color Contrast:</strong> Ensure sufficient color contrast between text and background for
+                  readability.</li>
+                <li>Keyboard Navigation:</strong> All interactive elements (links, buttons) should be navigable and
+                  usable via keyboard.</li>
+
+              </ul>
+
+            </div><!-- col -->
+          </div><!-- Row  -->
+        </div><!-- Container -->
+    </div> <!-- Content  -->
+
+
+    </main>
+  </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  </script>
+</body>
+
+</html>

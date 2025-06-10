@@ -1,0 +1,350 @@
+/* Harshitha Design System Core Stylesheet */
+
+:root {
+  /* Color Palette */
+  --hash-primary-deep-navy: #0D1B2A;
+  --hash-primary-midnight: #1B263B;
+  --hash-secondary-slate: #415A77;
+  --hash-accent-blue-gray: #778DA9;
+  --hash-background-light: #E0E1DD;
+  --hash-text-white: #FFFFFF;
+  --hash-text-light-gray: #F1F1F1;
+
+  /* Typography */
+  --font-serif: 'DM Serif Display', serif;
+  --font-sans: 'DM Sans', sans-serif;
+}
+
+body, html {
+  background-color: var(--hash-background-light);
+  color: var(--hash-primary-deep-navy);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  height: 100%; /* Ensure html and body take full viewport height */
+  /* min-width: 500px; */
+}
+
+/* Ensure the main layout row takes full height */
+.container-fluid.p-0, .container-fluid.p-0 .row.g-0 {
+  height: 100%;
+}
+
+/* Make the main content area fill remaining vertical space and enable scrolling */
+main {
+  height: 100%; /* Allow main to fill the height of its parent (.row.g-0) */
+  display: flex; /* Make main a flex container */
+  flex-direction: column; /* Stack its children vertically */
+}
+
+/* Ensure the inner content container within main can scroll */
+main > .container-fluid.overflow-auto {
+  flex-grow: 1; /* Allow this inner container to grow and take available space */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--hash-primary-deep-navy);
+}
+
+h1 { font-size: 50px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 18px; }
+
+p, a, span, li, button {
+  font-family: var(--font-sans);
+}
+
+a {
+  color: var(--hash-accent-blue-gray);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--hash-primary-midnight);
+  text-decoration: none;
+}
+
+button {
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--hash-secondary-slate);
+  color: var(--hash-text-white);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--hash-accent-blue-gray);
+}
+
+.navbar {
+  background-color: var(--hash-primary-midnight);
+  color: var(--hash-text-white);
+  font-family: var(--font-sans);
+  padding: 1rem;
+}
+
+footer {
+  background-color: var(--hash-primary-deep-navy);
+  color: var(--hash-text-light-gray);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 14px;
+}
+
+.card {
+  background-color: var(--hash-primary-midnight);
+  color: var(--hash-text-white);
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.card h3 {
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 16px;
+  color: var(--hash-text-light-gray);
+}
+
+.card .btn {
+  margin-top: 1rem;
+  background-color: var(--hash-secondary-slate);
+  color: var(--hash-text-white);
+}
+
+.card .btn:hover {
+  background-color: var(--hash-accent-blue-gray);
+}
+
+/* Extended styles for navigation and sidebars */
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+.offcanvas, .offcanvas-md, .offcanvas-sm {
+  --bs-offcanvas-width: 180px;
+}
+
+/* Narrower sidebar for desktop */
+.sidebar {
+  /* width: 250px !important; */
+}
+
+/* Make sidebar text smaller to fit in narrower space */
+.sidebar button, .sidebar a {
+  font-size: 1rem;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-hieght {
+  height: 60px;
+}
+
+.btn-toggle {
+  padding: .25rem 0;
+  font-weight: 600;
+  color: var(--hash-primary-deep-navy);
+  background-color: transparent;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: var(--hash-primary-midnight);
+  background-color: var(--hash-accent-blue-gray);
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:active {
+  background-color: var(--hash-accent-blue-gray);
+}
+
+.activeLink {
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: var(--hash-primary-deep-navy);
+  background-color: var(--hash-accent-blue-gray);
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: var(--hash-primary-midnight);
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  display: block;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.code-background {
+  background-color: var(--hash-text-light-gray);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px;
+}
+
+.page-link {
+  color: var(--hash-secondary-slate);
+}
+
+.pagination {
+  --bs-pagination-hover-color: var(--hash-primary-deep-navy);
+  --bs-pagination-hover-bg: var(--hash-accent-blue-gray);
+  --bs-pagination-active-color: var(--hash-primary-deep-navy);
+  --bs-pagination-active-bg: var(--hash-accent-blue-gray);
+  --bs-pagination-active-border-color: var(--hash-primary-deep-navy);
+}
+
+.paragraph-quote {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-style: italic;
+}
+
+.subcopy-italics {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.nav-item-text {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav-item-text:hover {
+  text-decoration: underline;
+}
+
+.nav-item-active {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 700; /* Assuming bold for active state based on image */
+  text-decoration: none;
+}
+
+.button-text {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Logo styles */
+.nav-logo {
+  max-height: 100px;
+  width: auto;
+}
+
+.nav-logo-container {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--hash-accent-blue-gray);
+  margin-bottom: 1rem;
+}
+
+/* Navbar Component Specific Styles */
+.navbar-example {
+  margin-bottom: 1rem;
+  border: 1px solid var(--hash-accent-blue-gray);
+  padding: 0.5rem;
+  background-color: var(--hash-primary-midnight);
+  color: var(--hash-text-white);
+  border-radius: 8px;
+}
+
+.navbar-example .navbar-brand {
+  color: var(--hash-text-white);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.navbar-example .nav-link {
+  color: var(--hash-text-white);
+  margin-left: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.navbar-example .nav-link:hover {
+  color: var(--hash-accent-blue-gray);
+}
+
+.navbar-example .navbar-toggler {
+  border-color: var(--hash-text-white);
+}
+
+.navbar-example .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-example .navbar-collapse {
+  justify-content: flex-end; /* Aligns nav items to the right */
+}
+
+.navbar-example-mobile-only {
+  max-width: 375px; /* Adjusted to a common mobile width */
+}
+
+.navbar-example-tablet-only {
+  max-width: 768px; /* Standard tablet width */
+}
+
+.navbar-example-desktop-only {
+  max-width: 1200px; /* Simulate a desktop width for the example */
+}
